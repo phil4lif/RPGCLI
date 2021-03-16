@@ -1,0 +1,22 @@
+{
+  "name": "rpgcli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phil4lif/RPGCLI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phil4lif/RPGCLI/issues"
+  },
+  "homepage": "https://github.com/phil4lif/RPGCLI#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
