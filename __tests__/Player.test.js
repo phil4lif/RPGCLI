@@ -14,3 +14,22 @@ test('Creates a player object', () => {
     expect(player.agility).toEqual(expect.any(Number));
     expect(player.inventory).toEqual(expect.arrayContaining([expect.any(Object)]))
 });
+
+test('Gets Player\'s stats as an object', () => {
+    const player = new Player('Phil');
+
+    expect(player.getStats()).toHaveProperty('potions');
+    expect(player.getStats()).toHaveProperty('health');
+    expect(player.getStats()).toHaveProperty('strength');
+    expect(player.getStats()).toHaveProperty('agility');
+});
+
+test('gets inventory from player or returns false', () => {
+    const player = new Player('Link');
+
+    expect(player.getInventory()).toEqual(expect.any(Array));
+
+    player.inventory = [];
+
+    expect(player.getInventory()).toEqual(false);
+});
